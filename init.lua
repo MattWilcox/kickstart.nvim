@@ -152,6 +152,10 @@ vim.o.splitbelow = true
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- Matt added the below to get sane tab sizes
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
 
