@@ -230,6 +230,8 @@ vim.filetype.add {
     pcss = 'css',
   },
 }
+vim.o.foldmethod = 'indent'
+vim.o.foldlevelstart = 60
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
