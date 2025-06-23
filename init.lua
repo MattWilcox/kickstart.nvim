@@ -223,6 +223,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- MATT ADDED
+-- associate pcss files with css so that we get the normal css features
+vim.filetype.add {
+  extension = {
+    pcss = 'css',
+  },
+}
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
